@@ -14,10 +14,6 @@ int main(void)
 	while (singleDigit < 10)
 	{
 		putchar(singleDigit + '0');
-		if (singleDigit < 9)
-		{
-			putchar('\n');
-		}
 		singleDigit++;
 	}
 	putchar('\n');
