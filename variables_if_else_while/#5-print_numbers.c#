@@ -15,9 +15,6 @@ int main(void)
 	{
 		putchar(singleDigit + '0');
 		if (singleDigit < 9)
-		{
-			putchar('\n');
-		}
 		singleDigit++;
 	}
 	putchar('\n');
