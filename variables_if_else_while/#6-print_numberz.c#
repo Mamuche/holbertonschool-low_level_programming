@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/**
- * main - print single digit numbers of base 10.
- *
- * Return: always 0
- */
+ /**
+  *main - print single digit numbers of base 10.
+  *
+  *Return: always 0(success)
+  */
 
 int main(void)
 {
