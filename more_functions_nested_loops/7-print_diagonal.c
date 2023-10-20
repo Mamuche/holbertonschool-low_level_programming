@@ -1,0 +1,28 @@
+#include "main.h"
+
+/**
+ * print_diagonal - draws a diagonal line.
+ * @n: the number of charater who prints the line.
+ */
+
+void print_diagonal(int n)
+{
+	int i, sp;
+
+	if (n > 0)
+
+	{
+		for (i = 0; i < n; i++)
+		{
+			for (sp = 0; sp < i; sp++)
+				_putchar(' ');
+			_putchar ('\\');
+
+			if (i == n - 1)
+				continue;
+
+			_putchar('\n');
+		}
+	}
+	_putchar('\n');
+}
