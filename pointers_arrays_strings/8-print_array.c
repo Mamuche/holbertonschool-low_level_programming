@@ -9,9 +9,18 @@
 
 void print_array(int *a, int n)
 {
-	for (n = 0; n < 5; n++)
+	int x;
+
+	for (x = 0; x < n; x++)
 	{
-		printf("%d, ", a[n]);
+		if (x == 0)
+		{
+			printf("%d", a[x]);
+		}
+		else
+		{
+			printf(", %d", a[x]);
+		}
 	}
 	printf("\n");
 }
