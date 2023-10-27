@@ -2,7 +2,7 @@
 
 /**
  * *string_toupper - change lowercase of a string to uppercase.
- * @ptr: pointer to string.
+ * @str: pointer to string.
  *
  * Return: pointer to string.
  */
@@ -16,5 +16,5 @@ char *string_toupper(char *str)
 		{
 			str[i] = str[i] - 32;
 		}
-      	return (str);
+	return (str);
 }
