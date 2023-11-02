@@ -19,9 +19,11 @@ int main(int argc, char *argv[])
 		mul = num1 * num2;
 
 		printf("%d\n", mul);
-		return (0);
 	}
 	else
+	{
 		printf("Error\n");
-	return (1);
+		return (1);
+	}
+	return (0);
 }
