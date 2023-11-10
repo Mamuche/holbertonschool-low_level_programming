@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * *_calloc - allocates memory for an array.
+ * *_calloc - allocates memory for an array and init to 0.
  * @nmemb: number of elements in the array.
  * @size: size of the elements.
  *
@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *a;
 	unsigned int i;
 
-	a = malloc(nmemb * size);
+	a = malloc(nmemb * sizeof(size));
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
