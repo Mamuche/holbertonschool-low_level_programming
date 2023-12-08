@@ -8,7 +8,7 @@ void close_file(int file)
 {
 	if (close(file) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", file);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file);
 		exit(100);
 	}
 }
@@ -29,8 +29,8 @@ int main(int argc, char *argv[])
 		exit(97);
 	}
 	from = open(argv[1], O_RDONLY);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	r = read(from, buffer, 1024);
-	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 
 	if (from == -1 || r == -1)
 	{
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while (r > 0)
+	if (r > 0)
 	{
 		w = write(to, buffer, r);
 		if (w == -1)
@@ -51,7 +51,6 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
 		}
-		r = read(from, buffer, 1024);
 	}
 	close_file(from);
 	close_file(to);
