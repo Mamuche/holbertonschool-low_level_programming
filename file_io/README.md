@@ -1,12 +1,22 @@
-C - File I/O
+<p align="center">
+<picture>
+ <source media="(prefers-color-scheme: dark)" srcset="https://images.squarespace-cdn.com/content/v1/5a4bfe8bf09ca4228ceca3b7/1539139199598-ANH454IHZI1OKWONKRXY/logo.jpg?format=2500w">
+ <source media="(prefers-color-scheme: light)" srcset="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIrK23KvJPB7XdZrIk9mHwe3GZvtsUZLjkh-eG6KRgCLeWu3MW0kFcggq4COpLmeZviQ&usqp=CAU">
+ <img alt="image holberton school" src="https://apply.holbertonschool.com/auth/sign_up?country=fr&locale=fr">
+</picture>
+</p>
 
-General
-Look for the right source of information online
-How to create, open, close, read and write files
-What are file descriptors
-What are the 3 standard file descriptors, what are their purpose and what are their POSIX names
-How to use the I/O system calls open, close, read and write
-What are and how to use the flags O_RDONLY, O_WRONLY, O_RDWR
-What are file permissions, and how to set them when creating a file with the open system call
-What is a system call
-What is the difference between a function and a system call
+
+<B><h1 align="center">
+C - File I/O
+</h1></B>
+
+## **Tasks**
+0. Write a function that reads a text file and prints it to the POSIX standard output.
+1. Create a function that creates a file.
+2. Write a function that appends text at the end of a file.
+3. Write a program that copies the content of a file to another file.
+
+## **Authors** :black_nib:
+
+Laroche Marion [Github](https://github.com/Mamuche).
